@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1">
+    <link rel="stylesheet" href="StyleSheet1.css">
+    <script src="JavaScript.js"></script>
+    <title>Portfolio | About</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <ul class="menu">
+                    <li id="Home"><a href="Home.html">Home</a></li>
+                    <li id="About" class="active"><a href="About.html">About</a></li>
+                    <li id="Projects"><a href="Projects.html">Projects</a></li>
+                    <li id="Contact"><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div>
+        <h1 id="intro-text" class="name-about">
+            Fahad Najah
+        </h1>
+    </div>
+    <main>
+        <section class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="image-container">
+                        <img src="Photo.jpg" alt="My Photo">
+                    </div>
+                    <div class="text-container">
+                        <h2>Aspiring Software Engineer.</h2>
+                        <p>I am a self-driven individual with a genuine passion for software engineering. I am captivated by the intricacies of coding and the endless possibilities it offers. I have already taken steps to immerse myself in this field by completing courses on platforms like FreeCodeCamp and CS50 from Harvard online. These courses have further enhanced my skills and knowledge in software engineering, providing me with valuable insights and practical experience. Recognizing the strong connection between technology and modern-day software engineering, I have also taken foundational courses on SoloLearn, focusing on HTML and CSS. I am thrilled to apply my expanding knowledge and passion to contribute to this dynamic industry.</p>
+                        <a href="Projects.html"><button class="more-ab">View Projects</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <div>
+            <h2 class="reason">
+                Why I chose Software Enginnering...
+            </h2>
+            <p class="reason-p">
+                Software Engineering is an ever-expanding field that holds immense importance in our modern lives. The digital landscape has become an integral part of our daily existence, and its impact is undeniable. Software Engineering demands a great deal of creativity, problem-solving, and innovation. It can present challenges that require perseverance and determination to overcome, as even the smallest mistake can have significant consequences. Nevertheless, I find tremendous enjoyment in this work. It not only allows me to enhance essential life skills such as patience, resilience, and time management but also offers the opportunity to make a significant impact. By developing and leveraging software solutions wisely, software engineering has the potential to improve our quality of life and address pressing global issues, including efficiency, accessibility, and connectivity. I am driven by the desire to apply my knowledge and skills in tackling these challenges, and to leave a positive legacy through my work in software engineering.
+            </p>
+        </div>
+
+    </main>
+
+
+
+
+    <hr id="homeline">
+    <footer>
+        <div class="footer-container">
+            <div class="column">
+                <h3>Links</h3>
+                <ul class="footer-links">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Contact</h3>
+                <p>Email: fahadnajah23@gmail.com</p>
+                <p>Phone: +971 54 296 5736</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>// Get the current page URL
+        var currentPage = window.location.href;
+
+        // Get the menu items by their ids
+        var HomePage = document.getElementById("Home");
+        var AboutPage = document.getElementById("About");
+        var ProjectsPage = document.getElementById("Projects");
+        var ContactPage = document.getElementById("Contact");
+
+        // Add the active class to the corresponding menu item based on the current page URL
+        if (currentPage.includes("Home")) {
+            HomePage.classList.add("active");
+        } else if (currentPage.includes("About")) {
+            AboutPage.classList.add("active");
+        } else if (currentPage.includes("Projects")) {
+            ProjectsPage.classList.add("active");
+        } else if (currentPage.includes("Contact")) {
+            ContactPage.classList.add("active");
+        }</script>
+
+
+</body>
+</html>

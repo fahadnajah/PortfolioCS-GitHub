@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale-1">
+    <link rel="stylesheet" href="StyleSheet1.css">
+    <script src="JavaScript.js"></script>
+    <title>Portfolio | CV</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <ul class="menu">
+                    <li id="Home"><a href="Home.html">Home</a></li>
+                    <li id="About"><a href="About.html">About</a></li>
+                    <li id="Projects"><a href="Projects.html">Projects</a></li>
+                    <li id="CV"><a href="CV.html">CV</a></li>
+                    <li id="Contact"><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div>
+        <h1 id="intro-text" class="name">
+            CV.
+        </h1>
+    </div>
+    <div id="more-b">
+        <a href="cv pdf.pdf" target="_blank"><button class="more-b">View CV</button></a>
+    </div>
+    <div class="res-shop">
+        <img src="cv jpg.jpg" />
+    </div>
+
+
+    <hr id="homeline" />
+    <footer>
+        <div class="footer-container">
+            <div class="column">
+                <h3>Links</h3>
+                <ul class="footer-links">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="CV.html">CV</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Contact</h3>
+                <p>Email: fahadnajah23@gmail.com</p>
+                <p>Phone: +971 54 296 5736</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        // Get the current page URL
+        var currentPage = window.location.href;
+
+        // Get the menu items by their ids
+        var HomePage = document.getElementById("Home");
+        var AboutPage = document.getElementById("About");
+        var ProjectsPage = document.getElementById("Projects");
+        var CVPage = document.getElementById("CV");
+        var ContactPage = document.getElementById("Contact");
+
+        // Add the active class to the corresponding menu item based on the current page URL
+        if (currentPage.includes("Home")) {
+            HomePage.classList.add("active");
+        } else if (currentPage.includes("About")) {
+            AboutPage.classList.add("active");
+        } else if (currentPage.includes("Projects")) {
+            ProjectsPage.classList.add("active");
+        } else if (currentPage.includes("CV")) {
+            CVPage.classList.add("active");
+        } else if (currentPage.includes("Contact")) {
+            ContactPage.classList.add("active");
+        }
+    </script>
+
+</body>
+</html>

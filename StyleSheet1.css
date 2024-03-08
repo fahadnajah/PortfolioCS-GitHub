@@ -1,0 +1,855 @@
+﻿html {
+    background-color: #ede7de;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+::selection {
+    background: #025a4e;
+    color: #ede7de;
+}
+
+@font-face {
+    font-family: acorn bold;
+    src: url(Font/Acorn-Bold.ttf);
+}
+
+@font-face {
+    font-family: acorn semibold;
+    src: url(Font/Acorn-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: acorn medium;
+    src: url(Font/Acorn-Medium.ttf);
+}
+
+@font-face {
+    font-family: acorn regular;
+    src: url(Font/Acorn-Regular.ttf);
+}
+
+@font-face {
+    font-family: acorn light;
+    src: url(Font/Acorn-Light.ttf);
+}
+
+@font-face {
+    font-family: acorn extralight;
+    src: url(Font/Acorn-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: acorn thin;
+    src: url(Font/Acorn-Thin.ttf);
+}
+
+/*Small Screens*/
+@media screen and (max-width: 769px) {
+    .container {
+        width: 100%; /* Set the desired width for the menu container */
+        margin: 0 auto; /* Center the container horizontally */
+    }
+
+    .menu {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        border-radius: 50px;
+        background: #f4f3f0cc;
+        backdrop-filter: blur(20px) saturate(1.7); /* Adjust the alpha value to control the translucency */
+        position: absolute;
+        z-index: 999;
+    }
+
+        .menu li {
+            margin: 5px;
+            padding: 5px;
+            font-size: 12px;
+        }
+
+            .menu li a {
+                font-size: 12px;
+            }
+
+    .name {
+        font-size: 50px;
+        padding: 0px 10px 0px 10px;
+    }
+
+    .name-about {
+        font-size: 50px;
+    }
+
+    .passion {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+
+    .more-b {
+        width: 125px;
+        height: 45px;
+        font-size: 12.5px;
+        margin: 25px 12px;
+    }
+
+    .website-btn {
+        width: 125px;
+        height: 45px;
+        font-size: 12.5px;
+    }
+
+    .lpage-btn {
+        width: 165px;
+        height: 45px;
+        font-size: 12.5px;
+    }
+
+    .more-ab {
+        width: 125px;
+        height: 45px;
+        font-size: 12.5px;
+        margin: 25px 0;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        margin-bottom: 30px;
+        max-width: 70%;
+    }
+
+    .text-container {
+        text-align: center;
+    }
+
+    .image-container img {
+        width: 90%;
+        height: auto;
+    }
+
+    .text-container p {
+        padding: 0 15px;
+        font-size: 16px;
+    }
+
+    .text-container h2 {
+        font-size: 30px;
+        padding: 0 15px;
+    }
+
+    .reason-p {
+        padding: 0 25px;
+        font-size: 16px;
+    }
+
+    .email {
+        padding: 0 25px;
+        font-size: 16px;
+    }
+
+    .phone {
+        padding: 0 25px;
+        font-size: 16px;
+    }
+
+    .reason {
+        font-size: 30px;
+        padding: 0 25px;
+    }
+
+    .email-t {
+        font-size: 30px;
+        padding: 15px 25px 0px 25px;
+    }
+
+    .phone-t {
+        font-size: 30px;
+        padding: 0 25px;
+    }
+
+    .pro1 {
+        font-size: 25px;
+        padding: 0 25px;
+    }
+
+    .pro1-h {
+        font-size: 25px;
+        padding: 0 25px;
+    }
+
+    .controls {
+        display: flex;
+        justify-content: center;
+    }
+
+    .slide img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .sketch img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .drawing img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .outline img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .res-shop img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .laptop-rec video {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .land img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .des {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .container {
+        width: 80%; /* Set the desired width for the menu container */
+        margin: 0 auto; /* Center the container horizontally */
+    }
+
+    .menu {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        border-radius: 50px;
+        background: #f4f3f0cc;
+        backdrop-filter: blur(20px) saturate(1.7); /* Adjust the alpha value to control the translucency */
+        position: absolute;
+        z-index: 999;
+    }
+
+        .menu li {
+            display: inline-block;
+            margin: 10px 15px;
+            padding: 0 10px 0 10px;
+        }
+
+            .menu li a {
+                font-size: 18px;
+            }
+
+    .name {
+        font-size: 95px;
+        padding: 0 15px;
+    }
+
+    .name-about {
+        font-size: 95px;
+        padding: 0 15px;
+    }
+
+    .passion {
+        font-size: 20px;
+    }
+
+    .more-b {
+        width: 145px;
+        height: 55px;
+        font-size: 15px;
+        margin: 25px 15px;
+    }
+
+    .more-ab {
+        width: 145px;
+        height: 55px;
+        font-size: 15px;
+        margin: 25px 0;
+    }
+
+    .lpage-btn {
+        width: 180px;
+        height: 55px;
+        font-size: 15px;
+    }
+
+    .website-btn {
+        width: 145px;
+        height: 55px;
+        font-size: 15px;
+    }
+
+    .column {
+        width: 20%;
+    }
+
+    .image-container img {
+        width: 50%;
+        height: auto;
+    }
+
+    .text-container p {
+        font-size: 20px;
+    }
+
+    .text-container h2 {
+        font-size: 55px;
+        margin-top: 0;
+    }
+
+    .reason-p {
+        font-size: 20px;
+        margin: 0;
+        padding: 0px 100px;
+    }
+
+    .email {
+        font-size: 25px;
+        margin: 0;
+        padding: 0px 150px;
+    }
+
+    .phone {
+        font-size: 25px;
+        margin: 0;
+        padding: 0px 150px;
+    }
+
+    .reason {
+        font-size: 55px;
+        margin: 10px 0;
+        padding: 40px 100px 10px 100px;
+    }
+
+    .email-t {
+        font-size: 55px;
+        margin: 10px 0;
+        padding: 40px 100px 10px 100px;
+    }
+
+    .phone-t {
+        font-size: 55px;
+        margin: 10px 0;
+        padding: 40px 100px 10px 100px;
+    }
+
+    .pro1 {
+        font-size: 30px;
+        margin: 10px 0;
+        padding: 40px 100px 10px 100px;
+    }
+
+    .pro1-h {
+        font-size: 30px;
+        margin: 10px 0;
+        padding: 0 100px 10px 100px;
+    }
+
+    .slide img {
+        max-width: 50%;
+        height: auto;
+    }
+
+    .sketch img {
+        max-width: 50%;
+        height: auto;
+    }
+
+    .drawing img {
+        max-width: 50%;
+        height: auto;
+    }
+
+    .outline img {
+        max-width: 50%;
+        height: auto;
+    }
+
+    .res-shop img {
+        max-width: 35%;
+        height: auto;
+    }
+
+    .laptop-rec video {
+        max-width: 50%;
+        height: auto;
+    }
+
+    .land img {
+        max-width: 50%;
+        height: auto;
+    }
+
+    .des {
+        padding: 0 250px;
+    }
+}
+
+header {
+    height: 40px;
+}
+
+.menu {
+    position: fixed;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    font-family: "acorn", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 0 10px 0 10px;
+}
+
+    .menu li a {
+        text-decoration: none;
+        color: #025a4e; /* Set the desired color for the menu links */
+    }
+
+    .menu li.active {
+        background: #ffffff80;
+        padding: 10px 15px;
+        border-radius: 50px;
+    }
+
+#intro-text {
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.name {
+    font-family: 'acorn bold', Arial, sans-serif;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 90px;
+    color: #025a4e;
+}
+
+.name-about {
+    font-family: 'acorn bold', Arial, sans-serif;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 90px;
+    color: #025a4e;
+}
+
+.passion {
+    font-family: 'acorn regular', Arial, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: #025a4e;
+}
+
+#more-b {
+    text-align: center;
+}
+
+#more-ab {
+    text-align: center;
+}
+
+.more-b {
+    text-align: center;
+    align-content: center;
+    border: 2px solid;
+    border-radius: 50px;
+    border-color: #025a4e;
+    background-color: transparent;
+    color: #025a4e;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.website-btn {
+    text-align: center;
+    align-content: center;
+    border: 2px solid;
+    border-radius: 50px;
+    border-color: #025a4e;
+    background-color: transparent;
+    color: #025a4e;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.more-ab {
+    text-align: center;
+    align-content: center;
+    border: 2px solid;
+    border-radius: 50px;
+    border-color: #025a4e;
+    background-color: transparent;
+    color: #025a4e;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.lpage-btn {
+    text-align: center;
+    align-content: center;
+    border: 2px solid;
+    border-radius: 50px;
+    border-color: #025a4e;
+    background-color: transparent;
+    color: #025a4e;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.more-b:hover {
+    background-color: #025a4e;
+    color: #ede7de;
+}
+
+.lpage-btn:hover {
+    background-color: #025a4e;
+    color: #ede7de;
+}
+
+.website-btn:hover {
+    background-color: #025a4e;
+    color: #ede7de;
+}
+
+.more-ab:hover {
+    background-color: #025a4e;
+    color: #ede7de;
+}
+
+#homeline {
+    margin-top: 70px;
+    color: #025a4e;
+}
+
+.footer-container {
+    display: flex;
+    background: #ede7de;
+    padding: 20px 50px;
+    margin-top: 40px;
+}
+
+.column p {
+    color: #025a4e;
+}
+
+.column h3 {
+    margin-bottom: 16px;
+    color: #025a4e;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    .footer-links li {
+        margin-bottom: 5px;
+        padding: 10px 0;
+    }
+
+        .footer-links li a {
+            text-decoration: none;
+            color: #025a4e;
+        }
+
+            .footer-links li a:hover {
+                text-decoration: underline;
+            }
+
+.text-container p {
+    margin: 0;
+    line-height: 1.5;
+    color: #025a4e;
+}
+
+.footer-links li {
+    margin-bottom: 5px;
+}
+
+    .footer-links li a {
+        text-decoration: none;
+        color: #025a4e;
+    }
+
+.contact-link {
+    text-decoration: none;
+    color: #025a4e;
+    font-weight: bold;
+}
+
+.about {
+    padding: 60px 0;
+    background-color: #ede7de;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-container {
+    flex: 0 0 40%;
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+    .image-container img {
+        display: block;
+        border: 2px solid;
+        border-color: #025a4e;
+        border-radius: 30px;
+    }
+
+.text-container {
+    flex: 0 0 55%;
+}
+
+    .text-container h2 {
+        margin-bottom: 10px;
+        color: #025a4e;
+        font-family: 'acorn semibold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+.reason {
+    color: #025a4e;
+    font-family: 'acorn semibold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.email-t {
+    color: #025a4e;
+    font-family: 'acorn semibold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.phone-t {
+    color: #025a4e;
+    font-family: 'acorn semibold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.pro1 {
+    color: #025a4e;
+    font-family: 'acorn semibold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.pro1-h {
+    color: #025a4e;
+    font-family: 'acorn semibold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.reason-p {
+    line-height: 1.5;
+    color: #025a4e;
+}
+
+.email {
+    line-height: 1.5;
+    color: #025a4e;
+}
+
+.phone {
+    line-height: 1.5;
+    color: #025a4e;
+}
+
+
+.awards {
+    padding: 60px 0;
+    background-color: #ede7de;
+}
+
+.slideshow-container {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.res-shop {
+    text-align: center;
+    padding: 80px 0 30px 0;
+}
+
+.laptop-rec {
+    position: relative;
+    margin-top: 60px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.land {
+    position: relative;
+    margin-top: 60px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.slide {
+    display: none;
+}
+
+    .slide img {
+        border: 2px solid;
+        border-color: #025a4e;
+    }
+
+.sketch {
+    display: none;
+}
+
+    .sketch img {
+        border: 2px solid;
+        border-color: #025a4e;
+    }
+
+.drawing {
+    display: none;
+}
+
+    .drawing img {
+        border: 2px solid;
+        border-color: #025a4e;
+    }
+
+.outline {
+    display: none;
+}
+
+    .outline img {
+        border: 2px solid;
+        border-color: #025a4e;
+    }
+
+.laptop-rec video {
+    border: 2px solid;
+    border-color: #025a4e;
+}
+
+.land img {
+    border: 2px solid;
+    border-color: #025a4e;
+}
+
+.controls {
+    margin-top: 20px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.prev-btn,
+.next-btn {
+    border: 2px solid;
+    border-radius: 50px;
+    border-color: #025a4e;
+    background-color: transparent;
+    color: #025a4e;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+    .prev-btn:hover,
+    .next-btn:hover {
+        background-color: #025a4e;
+        color: #ede7de;
+    }
+
+.table-section {
+    padding: 30px 0 15px 0;
+    background-color: #ede7de;
+    color: #025a4e;
+    text-align: center;
+    justify-content: center;
+}
+
+.des {
+    color: #025a4e;
+    text-align: center;
+    justify-content: center;
+}
+
+.website-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 40%;
+    align-content: center;
+}
+
+#cat {
+    font-size: 25px;
+}
+
+#cat1 {
+    font-size: 20px;
+}
+
+#cat2 {
+    font-size: 20px;
+}
+
+#cat3 {
+    font-size: 25px;
+}
+
+#cat4 {
+    font-size: 20px;
+}
+
+
+.website-table td {
+    padding: 15px;
+}
+
+.button-container {
+    margin-top: 10px;
+    text-align: center;
+}
